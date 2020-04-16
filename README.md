@@ -1,2 +1,2 @@
 # coronaAPP
-A simple app in development of covid-19 data.
+A simple app in development about covid-19.
