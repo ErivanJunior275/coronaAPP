@@ -5,7 +5,7 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 20
+        paddingTop: Constants.statusBarHeight + 20,
     },
     header: {
         flexDirection: 'row',
@@ -32,13 +32,13 @@ export default StyleSheet.create({
         color: '#737380'
     },
     incidentList: {
-        marginTop: 32
+        marginTop: 15
     },
     incident: {
         padding: 24,
         borderRadius: 8,
         backgroundColor: '#ffffff',
-        marginBottom: 16
+        marginBottom: 16,
     },
     incidentProperty: {
         fontSize: 14,
@@ -53,12 +53,23 @@ export default StyleSheet.create({
     },
     detailsButton: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center'
     },
     detailsButtonText: {
-        color: '#e02041',
+        backgroundColor: '#30bd13',
+        padding: 12,
+        color: 'white',
         fontSize: 15,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        borderRadius: 8,
+    },
+    searchBox: {
+        flexDirection: 'row',
+        borderRadius: 6,
+        backgroundColor: '#e4eeed',
+        marginTop: 12,
+        padding: 6,
+
     },
 });
