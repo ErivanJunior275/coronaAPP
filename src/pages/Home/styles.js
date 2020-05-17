@@ -6,70 +6,75 @@ export default StyleSheet.create({
         flex: 1,
         paddingHorizontal: 24,
         paddingTop: Constants.statusBarHeight + 20,
+        backgroundColor: '#fff'
     },
     header: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center'
+        justifyContent: 'space-around',
+        // alignItems: 'center'
     },
     headerText: {
-        fontSize: 15,
-        color: '#737380'
+        fontSize: 25,
+        color: '#767f8b',
+        margin: 12
     },
     headerTextBold: {
-        fontWeight: 'bold'
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: '#e15759'
+    },
+    break: {
+        marginLeft: 25,
+        alignItems: 'center',
+        paddingRight: 15
     },
     title: {
         fontSize: 30,
-        marginBottom: 16,
-        marginTop: 48,
-        color: '#13131a',
+        marginBottom: 25,
+        marginTop: 15,
+        color: '#4e79a7',
         fontWeight: 'bold'
     },
     description: {
-        fontSize: 16,
+        fontSize: 26,
         lineHeight: 24,
-        color: '#737380'
-    },
-    incidentList: {
-        marginTop: 15
-    },
-    incident: {
-        padding: 24,
-        borderRadius: 8,
-        backgroundColor: '#ffffff',
-        marginBottom: 16,
-    },
-    incidentProperty: {
-        fontSize: 14,
-        color: '#41414d',
-        fontWeight: 'bold'
-    },
-    incidentValue: {
-        marginTop: 8,
-        fontSize: 15,
-        marginBottom: 24,
-        color: '#737380'
+        color: '#767f8b',
+        paddingBottom: 25,
+        textAlign: "justify"
     },
     detailsButton: {
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        margin: 25
     },
     detailsButtonText: {
-        backgroundColor: '#30bd13',
+        backgroundColor: '#59a14f',
         padding: 12,
         color: 'white',
-        fontSize: 15,
+        fontSize: 25,
         fontWeight: 'bold',
         borderRadius: 8,
     },
-    searchBox: {
+    icon: {
+        margin: 40,
+        paddingRight: 15
+    },
+    navigateContainer: {
         flexDirection: 'row',
-        borderRadius: 6,
-        backgroundColor: '#e4eeed',
-        marginTop: 12,
-        padding: 6,
-
+        alignItems: "center",
+        justifyContent: "space-around"
+    },
+    goldButtonText: {
+        color: '#f28e2b',
+        fontSize: 16,
+        textAlign: 'center',
+        textAlignVertical: 'center'
+    },
+    skyButtonText: {
+        color: '#4e79a7',
+        fontSize: 16,
+        textAlign: 'center',
+        textAlignVertical: 'center'
     },
 });
