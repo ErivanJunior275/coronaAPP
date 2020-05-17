@@ -7,7 +7,7 @@ import styles from './styles';
 export default function Country() {
 
     const route = useRoute();
-    const country = route.params.country;
+    const country = route.params.country.split(' ').join('').toUpperCase();
     const navigation = useNavigation();
 
     function navigateBack() {
