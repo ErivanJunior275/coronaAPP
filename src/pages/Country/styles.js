@@ -5,11 +5,10 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 20,
+        // paddingTop: Constants.statusBarHeight,
     },
     webview: {
         backgroundColor: '#f2f2f2'
-        
     },
     header: {
         flexDirection: 'row',
@@ -26,9 +25,10 @@ export default StyleSheet.create({
     title: {
         fontSize: 30,
         marginBottom: 16,
-        marginTop: 48,
+        marginTop: 12,
         color: '#13131a',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     description: {
         fontSize: 16,

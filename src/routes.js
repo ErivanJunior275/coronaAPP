@@ -24,5 +24,3 @@ export default function Routes() {
         </NavigationContainer>
     );
 }
-
-// screenOptions={{ headerShown: false }}

@@ -54,7 +54,7 @@ export default function List() {
     }
 
     function navigateToDetail(country) {
-        navigation.navigate('Details', { country });
+        navigation.navigate('Detalhes', { country });
     }
 
     function searchCountry(event) {
