@@ -37,7 +37,7 @@ export default StyleSheet.create({
     },
     description: {
         fontSize: 26,
-        lineHeight: 24,
+        lineHeight: 26,
         color: '#767f8b',
         paddingBottom: 25,
         textAlign: "justify"

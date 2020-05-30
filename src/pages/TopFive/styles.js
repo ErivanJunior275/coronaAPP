@@ -5,13 +5,16 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 20,
-        backgroundColor: '#fff'
+        paddingTop: Constants.statusBarHeight + 18,
+        backgroundColor: '#f2f2f2'
+    },
+    webview: {
+        backgroundColor: '#f2f2f2'
     },
     title: {
         fontSize: 30,
-        marginBottom: 25,
-        marginTop: 15,
+        marginBottom: 22,
+        marginTop: 7,
         color: '#4e79a7',
         fontWeight: 'bold'
     },
