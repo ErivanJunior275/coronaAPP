@@ -9,8 +9,7 @@ export default function TopFive() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Top 5</Text>
-            <WebView
+            <WebView showsVerticalScrollIndicator={false}
                 source={{uri: `https://public.tableau.com/views/coronaAPP/Top5_1?:embed=yes&:tooltip=no&:toolbar=no&:showVizHome=no&:mobile=y&:showAppBanner=false&:`}}
                 style={styles.webview}/>
         </View>

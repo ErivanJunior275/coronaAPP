@@ -86,7 +86,12 @@ export default function List() {
                         <Text style={styles.incidentProperty}>CASOS CONFIRMADOS:</Text>
                         <Text style={styles.incidentValue}>{incident.properties.Confirmed}</Text>
                         <Text style={styles.incidentProperty}>ATUALIZADO EM:</Text>
-                        <Text style={styles.incidentValue}>{incident.properties.Last_Update}</Text>
+                        <Text style={styles.incidentValue}>
+                            {Intl.DateTimeFormat('pt-BR', 
+                            {   year: 'numeric', month: 'long', day: 'numeric',
+                                hour: 'numeric', minute: 'numeric', second: 'numeric',
+                                hour12: false
+                            }).format(new Date(incident.properties.Last_Update))}</Text>
                         <TouchableOpacity
                             style={styles.detailsButton}
                             onPress={() => navigateToDetail(incident.properties.Country_Region)}>

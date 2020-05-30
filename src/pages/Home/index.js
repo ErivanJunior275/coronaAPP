@@ -34,7 +34,7 @@ export default function Home() {
     }
 
     function navigateToTopFive() {
-        navigation.navigate('TopFive');
+        navigation.navigate('Top 5');
     }
 
     function navigateToTips() {
@@ -65,13 +65,13 @@ export default function Home() {
             <View style={styles.navigateContainer}>
                 <TouchableOpacity
                     onPress={() => navigateToTopFive()}>
-                    <FontAwesome5 size={80} name='trophy' color='#f28e2b' />
+                    <FontAwesome5 size={80} name='trophy' color='#f28e2b' style={styles.containerSelfIcon} />
                     <Text style={styles.goldButtonText}>Top 5</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.skyButton}
                     onPress={() => navigateToTips()}>
-                    <FontAwesome5 size={80} name='tint' color='#4e79a7' />
+                    <FontAwesome5 size={80} name='tint' color='#4e79a7' style={styles.containerSelfIcon} />
                     <Text style={styles.skyButtonText}>Dicas</Text>
                 </TouchableOpacity>
             </View>

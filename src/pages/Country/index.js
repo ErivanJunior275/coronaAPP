@@ -14,7 +14,7 @@ function Country() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{country}</Text>
-            <WebView
+            <WebView showsVerticalScrollIndicator={false}
                 source={{uri: `https://public.tableau.com/views/coronaAPP/Paisdetail?param_react=${country}&&:embed=yes&:tooltip=no&:toolbar=no&:showVizHome=no&:mobile=y&:showAppBanner=false&:`}}
                 style={styles.webview}/>
 

@@ -15,11 +15,27 @@ export default function Routes() {
     return (
         <NavigationContainer>
             <AppStack.Navigator >
-                <AppStack.Screen name="Home" component={Home} options={{headerShown: false}} />
-                <AppStack.Screen name="COVID-19" component={List} />
-                <AppStack.Screen name="TopFive" component={TopFive} />
-                <AppStack.Screen name="Dicas" component={Tips} />
-                <AppStack.Screen name="Detalhes" component={Country} /> 
+                <AppStack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+                <AppStack.Screen name="COVID-19" component={List}
+                    options={{
+                        headerTintColor: '#FFF',
+                        headerStyle: { backgroundColor: '#4e79a7'}
+                    } } />
+                <AppStack.Screen name="Top 5" component={TopFive} 
+                    options={{
+                        headerTintColor: '#FFF',
+                        headerStyle: { backgroundColor: '#4e79a7'}
+                    } } />
+                <AppStack.Screen name="Dicas" component={Tips} 
+                    options={{
+                        headerTintColor: '#FFF',
+                        headerStyle: { backgroundColor: '#4e79a7'}
+                    } } />
+                <AppStack.Screen name="Detalhes" component={Country} 
+                    options={{
+                        headerTintColor: '#FFF',
+                        headerStyle: { backgroundColor: '#4e79a7'}
+                    } } />
             </AppStack.Navigator>
         </NavigationContainer>
     );

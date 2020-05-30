@@ -11,7 +11,6 @@ export default StyleSheet.create({
     header: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        // alignItems: 'center'
     },
     headerText: {
         fontSize: 25,
@@ -33,7 +32,7 @@ export default StyleSheet.create({
         marginBottom: 25,
         marginTop: 15,
         color: '#4e79a7',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     description: {
         fontSize: 26,
@@ -63,7 +62,7 @@ export default StyleSheet.create({
     navigateContainer: {
         flexDirection: 'row',
         alignItems: "center",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
     },
     goldButtonText: {
         color: '#f28e2b',
@@ -77,4 +76,8 @@ export default StyleSheet.create({
         textAlign: 'center',
         textAlignVertical: 'center'
     },
+    containerSelfIcon: {
+        textAlign: 'center',
+        textAlignVertical: 'center',
+    }
 });
