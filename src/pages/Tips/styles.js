@@ -1,30 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 import Constants from 'expo-constants';
 
 export default StyleSheet.create({
-    container: {
+    backdrop: {
         flex: 1,
-        backgroundColor: '#fff'
-    },
-    title: {
-        fontSize: 30,
-        marginBottom: 25,
-        marginTop: 15,
-        color: '#4e79a7',
-        fontWeight: 'bold'
-    },
-    detailsButton: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        margin: 25
-    },
-    detailsButtonText: {
-        backgroundColor: '#59a14f',
-        padding: 12,
-        color: 'white',
-        fontSize: 25,
-        fontWeight: 'bold',
-        borderRadius: 8,
+        flexDirection: "column",
+        width: Dimensions.get("window").width,
+        height: Dimensions.get("window").height
     }
 });

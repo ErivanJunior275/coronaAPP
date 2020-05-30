@@ -6,8 +6,9 @@ import styles from './styles';
 export default function Tips() {
 
     return (
-        <ScrollView style={styles.container}>
-            <Image source={require("../../assets/info-covid.jpg")} resizeMode="stretch" > 
+        <ScrollView>
+            <Image source={require("../../assets/dicas.jpg")} 
+                resizeMode="cover" style={styles.backdrop}> 
             </Image>
         </ScrollView>
     );
