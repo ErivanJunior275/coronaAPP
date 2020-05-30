@@ -7,6 +7,10 @@ export default StyleSheet.create({
         paddingHorizontal: 24,
         paddingTop: Constants.statusBarHeight + 20,
     },
+    webview: {
+        backgroundColor: '#f2f2f2'
+        
+    },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',

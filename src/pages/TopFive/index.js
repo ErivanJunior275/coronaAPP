@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
-
+import WebView from 'react-native-webview';
 import styles from './styles';
+
 
 export default function TopFive() {
 
@@ -22,6 +23,11 @@ export default function TopFive() {
                 </TouchableOpacity>
             </View>
             <Text style={styles.title}>Top 5</Text>
+            <WebView
+                source={{uri: `https://public.tableau.com/views/coronaAPP/Top5_1?:embed=yes&:tooltip=no&:toolbar=no&:showVizHome=no&:mobile=y&:showAppBanner=false&:`}}
+                style={styles.webview}/>
+      
         </View>
+        
     );
 }
