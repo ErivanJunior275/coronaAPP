@@ -30,7 +30,7 @@ export default function Home() {
     }
 
     function navigateToList(incidents) {
-        navigation.navigate('List', { incidents });
+        navigation.navigate('COVID-19', { incidents });
     }
 
     function navigateToTopFive() {
@@ -38,7 +38,7 @@ export default function Home() {
     }
 
     function navigateToTips() {
-        navigation.navigate('Tips');
+        navigation.navigate('Dicas');
     }
 
 

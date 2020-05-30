@@ -4,8 +4,6 @@ import Constants from 'expo-constants';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 24,
-        paddingTop: Constants.statusBarHeight + 20,
         backgroundColor: '#fff'
     },
     title: {
@@ -28,5 +26,5 @@ export default StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold',
         borderRadius: 8,
-    },
+    }
 });

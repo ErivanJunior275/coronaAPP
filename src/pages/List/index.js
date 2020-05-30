@@ -67,19 +67,8 @@ export default function List() {
         }
     }
 
-    function navigateBack() {
-        navigation.goBack();
-    }
-
     return (
         <View style={styles.container}>
-            <View style={styles.detailsButton}>
-                <TouchableOpacity
-                    style={styles.detailsButtonText}
-                    onPress={navigateBack}>
-                </TouchableOpacity>
-            </View>
-            <Text style={styles.title}>COVID-19</Text>
             <TextInput style={[styles.description, styles.searchBox]}
                 onSubmitEditing={searchCountry}
                 underlineColorAndroid="transparent"

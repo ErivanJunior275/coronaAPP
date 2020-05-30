@@ -14,13 +14,15 @@ const AppStack = createStackNavigator();
 export default function Routes() {
     return (
         <NavigationContainer>
-            <AppStack.Navigator screenOptions={{ headerShown: false }} >
-                <AppStack.Screen name="Home" component={Home} />
-                <AppStack.Screen name="List" component={List} />
+            <AppStack.Navigator >
+                <AppStack.Screen name="Home" component={Home} options={{headerShown: false}} />
+                <AppStack.Screen name="COVID-19" component={List} />
                 <AppStack.Screen name="TopFive" component={TopFive} />
-                <AppStack.Screen name="Tips" component={Tips} />
-                <AppStack.Screen name="Details" component={Country} /> 
+                <AppStack.Screen name="Dicas" component={Tips} />
+                <AppStack.Screen name="Detalhes" component={Country} /> 
             </AppStack.Navigator>
         </NavigationContainer>
     );
 }
+
+// screenOptions={{ headerShown: false }}

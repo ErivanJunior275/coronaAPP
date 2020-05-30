@@ -1,26 +1,14 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { ScrollView, Image } from 'react-native';
 
 import styles from './styles';
 
 export default function Tips() {
 
-    const navigation = useNavigation();
-
-    function navigateBack() {
-        navigation.goBack();
-    }
-
     return (
-        <View style={styles.container}>
-            <View style={styles.detailsButton}>
-                <TouchableOpacity
-                    style={styles.detailsButtonText}
-                    onPress={navigateBack}>
-                </TouchableOpacity>
-            </View>
-            <Text style={styles.title}>Dicas</Text>
-        </View>
+        <ScrollView style={styles.container}>
+            <Image source={require("../../assets/info-covid.jpg")} resizeMode="stretch" > 
+            </Image>
+        </ScrollView>
     );
 }
