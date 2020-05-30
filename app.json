@@ -13,7 +13,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0c0924"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,6 +23,10 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "br.com.corona.coronaApp",
+      "versionCode": 1
     }
   }
 }
